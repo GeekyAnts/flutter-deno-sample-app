@@ -65,7 +65,26 @@ Use this extension for VSCode only
 - https://deno.land/manual/ - Deno Setup Manual
 - https://deno.land/x - Deno Third Party Modules
 
+### Update Dependencies
 
-    
+In order to reload a module or all modules you have to use: --reload
+
+For that module specifically:
+
+    deno run --reload=https://deno.land/std/http/server.ts index.js
+
+or just use --reload without any value to reload all modules:
+
+    deno run --reload index.js
+
+You can even select a couple of modules if you pass comma separated modules to --reload
+
+    deno run --reload=module1,moduleN index.js
+
+Or reload all std modules
+
+    deno run --reload=https://deno.land/std index.js
+
+You can use deno cache instead of deno run too. The former will just download the dependencies, while the former download & run the script.
     
     
