@@ -1,0 +1,19 @@
+{
+    "scripts": {
+      "start": {
+        "cmd": "deno run app.ts",
+        "desc": "Run the main server.",
+          
+        "env": {
+          "PORT": "3000"
+        },
+        "allow": [        
+          "net","read","write","env"
+        ],
+        "unstable" : true
+
+      }
+    }
+  }
+
+
