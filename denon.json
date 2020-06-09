@@ -1,7 +1,7 @@
 {
     "scripts": {
       "start": {
-        "cmd": "deno run app.ts",
+        "cmd": "deno run server.ts",
         "desc": "Run the main server",
         "allow": [        
           "net","read","write","env"
