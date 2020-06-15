@@ -1,3 +1,4 @@
+//@description      Describing the database credentials used for the connection
 const dbCredentials = {
     user: "admin",
         database: "deva_poems",
